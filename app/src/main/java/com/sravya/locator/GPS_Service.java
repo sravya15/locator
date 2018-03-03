@@ -38,7 +38,7 @@ public class GPS_Service extends Service {
 
 
                 Intent i = new Intent("location_update");
-                i.putExtra("coordinates",location.getLongitude()+" "+location.getLatitude()+" "+datetime);
+                i.putExtra("coordinates",datetime+" "+location.getLongitude()+" "+location.getLatitude());
                 sendBroadcast(i);
             }
 
